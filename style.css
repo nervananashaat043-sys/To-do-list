@@ -1,0 +1,112 @@
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fb7185, #f97316 45%, #facc15);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 16px;
+  margin: 0;
+}
+
+
+.app {
+  background: rgba(255, 255, 255, .25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  width: 100%;
+  max-width: 470px;
+  padding: 30px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
+h1 {
+  margin: 0 0 22px;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+}
+
+.add { display: flex; gap: 10px; }
+
+.add input {
+  flex: 1;
+  padding: 13px 16px;
+  background: rgba(255, 255, 255, .85);
+  color: #444;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+}
+
+.add button {
+  padding: 13px 20px;
+  background: #1e293b;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul { list-style: none; padding: 0; margin: 20px 0 0; }
+
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, .9);
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+li span { flex: 1; color: #334155; }
+
+
+.complete-btn {
+  padding: 7px 14px;
+  background: #334155;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+li.done { background: rgba(220, 252, 231, .95); }
+li.done span { color: #16a34a; font-weight: 600; }
+li.done .complete-btn { background: #16a34a; }
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.count { margin-top: 14px; text-align: center; color: #fff; font-size: 14px; }
+
+
+.congrats {
+  display: none;
+  margin-top: 16px;
+  padding: 16px;
+  background: #fff;
+  color: #15803d;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .15);
+}
+.congrats.show { display: block; }
